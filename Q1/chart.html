@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Overview</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e6e6e6;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .wrapper {
+        width: 85%;
+        margin: auto;
+    }
+
+    .data-table {
+        border-collapse: collapse;
+        margin: 30px auto;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        min-width: 1100px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    .data-table thead tr {
+        background-color: #336699;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .data-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .data-table tbody tr:nth-child(even) {
+        background-color: #cccccc;
+    }
+
+    .data-table tbody tr:last-child {
+        border-bottom: 3px solid #336699;
+    }
+
+    .data-table tbody tr.highlighted-row {
+        font-weight: bold;
+        color: #336699;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        color: #336699;
+        margin-bottom: 25px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2 class="title">Inventory Cost Data</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>ProjectedCost</th>
+                <th>MaterialCost</th>
+                <th>LaborCost</th>
+                <th>StorageAnnual</th>
+                <th>TotalCost</th>
+                <th>SalePrice</th>
+                <th>ProfitMargin</th>
+            </tr>
+        </thead>
+        <tbody id="inventoryData">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="chart.js" ></script>
+</body>
+</html>
