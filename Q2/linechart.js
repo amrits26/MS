@@ -3,7 +3,7 @@ const svgContainer = d3.select("body").append("svg")
    .attr("height", 800)
    .attr("viewBox", "0 -30 1500 1000");
 
-const dataUrl = "https://raw.githubusercontent.com/amrits26/MS1/refs/heads/main/data_sample.csv";
+const dataUrl = "https://raw.githubusercontent.com/amrits26/MS/refs/heads/main/data_sample.csv";
 
 d3.csv(dataUrl, d => {
    return {

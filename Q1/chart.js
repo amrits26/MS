@@ -1,5 +1,5 @@
     // Load and parse CSV content
-    fetch('https://raw.githubusercontent.com/amrits26/MS1/refs/heads/main/data_sample.csv')
+    fetch('https://raw.githubusercontent.com/amrits26/MS/refs/heads/main/data_sample.csv')
     .then(res => res.text())
     .then(csvData => {
         const rows = csvData.split('\n').slice(1); 
